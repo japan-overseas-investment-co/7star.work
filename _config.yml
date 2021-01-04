@@ -2,8 +2,8 @@ title:              おススメキャンペーン
 email:              your-email@example.com
 description:        格安バーチャルオフィスコース（住所のみ）都心でも一等地な港区の住所をレンタルするプランです。法人登記も可能で月4回の郵便転送付きです
 author:             Asami
-baseurl:            "/startbootstrap-clean-blog-jekyll"
-url:                "https://startbootstrap.github.io"
+baseurl:            ""
+url:                ""
 
 # Social Profiles
 twitter_username:   SBootstrap
