@@ -4,6 +4,7 @@ description:        格安バーチャルオフィスコース（住所のみ）
 author:             Asami
 baseurl:            ""
 url:                ""
+lang:               jp
 
 # Social Profiles
 twitter_username:   SBootstrap
