@@ -19,6 +19,13 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="{{"/" | relative_url }}">ホームページ</a>
+          {% assign posts=site.posts | where:"lang", site.lang%}
+          {% for post in posts %}
+            <a class="nav-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+              {{ post.title }}
+            </a>
+          {% endfor %}
+          <!--
           <a class="nav-link" href="{{"/2020/01/30/featuresJP" | relative_url }}">選ばれる4つの特長</a>
           <a class="nav-link" href="{{"/2020/01/29/serviceJP" | relative_url }}">基本サービス</a>
           <a class="nav-link" href="{{"/2020/01/29/priceJP" | relative_url }}">費用</a>
@@ -29,6 +36,7 @@
           <a class="nav-link" href="{{"/2020/01/27/applicationJP" | relative_url }}">ご契約までの流れ</a>
           <a class="nav-link" href="{{"/2020/01/26/necessaryDocumentsJP" | relative_url }}">必要書類</a>
           <a class="nav-link" href="{{"/2020/01/25/shit" | relative_url }}">バーチャルオフィスの法人登記について</a>
+          -->
         </li>
         <!--
         <li class="nav-item">
