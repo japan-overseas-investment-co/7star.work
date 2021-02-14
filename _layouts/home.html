@@ -17,6 +17,11 @@ layout: default
             {% if site.description %}
             <span class="subheading">{{ site.description }}</span>
             {% endif %}
+            <br>
+            <br>
+            <div style="display: flex; align-items: center; justify-content: center;">
+              <a class="btn btn-light" role="button" style="border: 1px solid #9c9c9c; border-radius: .25rem;" href="{{"indexCN" | prepend: site.baseurl | replace: '//' , '/' }}">中国語</a>
+            </div>
           </div>
         </div>
       </div>
@@ -49,7 +54,7 @@ layout: default
         {{ content }}
 
         <!-- Home Post List -->
-        {% assign posts=site.posts | where:"lang", site.lang%}
+        {% assign posts=site.posts | where:"lang", "jp" %}
         {% for post in posts %}
 
         <article class="post-preview">
@@ -75,10 +80,8 @@ layout: default
         </article>
         
         <hr>
-        
-        
-
         {% endfor %}
+
         <br>
         <br>
 
